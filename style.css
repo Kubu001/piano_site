@@ -1,0 +1,33 @@
+body{
+    background-color: #262B2A;
+    color: #F6F8FC;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+
+}
+div.logo{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+.element-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    align-items: center;
+}
+.element > a{
+    color: #F6F8FC;
+    text-decoration: none;
+}
+.element > a:hover{
+    color: #F61A30;
+}
