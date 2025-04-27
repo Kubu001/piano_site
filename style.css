@@ -290,3 +290,16 @@ div.logo {
     margin-top: 30px;
     font-size: 17px;
 }
+
+/*footer*/
+
+.foot-wrapper{
+    display: flex;
+}
+
+.contacts, .menu{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+}
