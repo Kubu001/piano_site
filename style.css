@@ -267,3 +267,26 @@ div.logo {
     color: #262B2A;
     background-color: #F61A30;
 }
+
+
+/*Contact*/
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #48514f;
+    width: 40%;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    font-size: 13px;
+}
+
+.contact-btn{
+    margin-top: 30px;
+    font-size: 17px;
+}
