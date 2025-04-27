@@ -1,62 +1,99 @@
-body{
+body {
     background-color: #262B2A;
     color: #F6F8FC;
     font-family: 'Poppins', sans-serif;
 }
-.container{
-    width: 50%;
+
+.container {
+    width: 65%;
     margin-left: auto;
     margin-right: auto;
 }
 
+button {
+    background-color: #F61A30;
+    color: #F6F8FC;
+    outline: none;
+    border: none;
+    padding: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: background-color 0.5s 
+}
+
+button:hover{
+    background-color: #dc091e;
+    cursor: pointer;
+}
+
+h6,
+h1,
+h2 {
+    margin: 0;
+}
+
+h6 {
+    color: #F61A30;
+    letter-spacing: 2px;
+}
+
+ul {
+    list-style-type: "\2705";
+}
+
+li{
+    padding: 5px 0px 0px 20px;
+}
+
 /*nav*/
-nav{
+nav {
     display: flex;
     justify-content: space-between;
 
 }
-div.logo{
+
+div.logo {
     width: 50px;
     height: 50px;
     background-color: red;
 }
-.element-container{
+
+.element-container {
     display: flex;
     width: 50%;
     justify-content: space-between;
     align-items: center;
 }
-.element > a{
+
+.element>a {
     color: #F6F8FC;
     text-decoration: none;
 }
-.element > a:hover{
+
+.element>a:hover {
     color: #F61A30;
 }
 
 /*business card*/
-.biz-card{
+.biz-card {
     display: flex;
     margin-top: 60px;
     height: 624px;
 }
-.biz-card > .text{
+
+.biz-card>.text {
     margin-top: auto;
     margin-bottom: auto;
     width: 45%;
     margin-right: 5%;
     font-size: 13px;
 }
-.biz-card > .text > p{
+
+.biz-card>.text>p {
     font-weight: 300;
 }
-h6,h1{
-    margin: 0;
-}
-.biz-card > .text > h6{
-    color: #F61A30;
-}
-.biz-card > .image{
+
+.biz-card>.image {
     width: 50%;
     height: 75%;
     background-image: url(https://upload.wikimedia.org/wikipedia/commons/6/6e/Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg);
@@ -64,35 +101,34 @@ h6,h1{
     margin-top: auto;
     margin-bottom: auto;
     box-shadow: 0px 0px 39px 0px rgba(220, 220, 220, 1);
-    border-radius: 10px;;
+    border-radius: 10px;
+    ;
 }
-.biz-card > .image > img{
+
+.biz-card>.image>img {
     width: 600px;
     height: 624px;
     overflow-y: clip;
 }
-.biz-card > .text > button{
-    background-color: #F61A30;
-    color: #F6F8FC;
-    outline: none;
-    border: none;
-    padding: 10px;
+
+.biz-card .text button {
+
     margin-top: 20px;
 }
 
 /* Review Carousel*/
-.reviews-wrapper{
+.reviews-wrapper {
     background-color: #48514f;
     height: 450px;
     padding: 40px;
     margin-top: 80px;
 }
 
-.reviews-wrapper h6 h1{
+.reviews-wrapper {
     text-align: center;
 }
 
-.reviews-wrapper > h6{
+.reviews-wrapper>p {
     margin-top: 20px;
     margin-bottom: 50px;
     font-weight: 300;
@@ -100,79 +136,134 @@ h6,h1{
 
 }
 
-.card q{
+.card q {
     font-size: 11px;
 }
 
 
 
-/* From Uiverse.io by ashwin_5681 */ 
+/* From Uiverse.io by ashwin_5681 */
 .card {
     width: 100%;
     height: 80%;
     padding: 15px;
     border-left: 1px solid white;
-    color: inherit;
     margin-left: 10px;
-  }
-  
-  .card p {
+    text-align: left;
+}
+
+.card p {
     font-size: 14px;
     color: inherit;
     text-align: end;
-  }
-  
-  .slider {
+}
+
+.slider {
     width: 100%;
     height: var(--height);
     overflow: hidden;
     mask-image: linear-gradient(to right, transparent, #000 10% 90%, transparent);
-  }
-  .slider .list {
+}
+
+.slider .list {
     display: flex;
     width: 100%;
     min-width: calc(var(--width) * var(--quantity));
     position: relative;
-  }
-  .slider .list .item {
+}
+
+.slider .list .item {
     width: var(--width);
     height: var(--height);
     position: absolute;
     left: 100%;
     animation: autoRun var(--speed) linear infinite;
     transition: filter 0.5s, color 0.5s;
-    animation-delay: calc(
-      (var(--speed) / var(--quantity)) * (var(--position) - 1) - var(--speed)
-    ) !important;
-  }
-  .slider .list .item img {
+    animation-delay: calc((var(--speed) / var(--quantity)) * (var(--position) - 1) - var(--speed)) !important;
+    color: #a0aba9;
+}
+
+.slider .list .item img {
     width: 100%;
-  }
-  @keyframes autoRun {
+}
+
+@keyframes autoRun {
     from {
-      left: 100%;
+        left: 100%;
     }
+
     to {
-      left: calc(var(--width) * -1);
+        left: calc(var(--width) * -1);
     }
-  }
-  .slider:hover .item {
+}
+
+.slider:hover .item {
     animation-play-state: paused !important;
     filter: grayscale(1);
-  }
-  .slider .item:hover {
+    color: #788785;
+}
+
+.slider .item:hover {
     filter: grayscale(0);
-    color: #F61A30;
-  }
-  .slider[reverse="true"] .item {
+    color: white;
+}
+
+.slider[reverse="true"] .item {
     animation: reversePlay 10s linear infinite;
-  }
-  @keyframes reversePlay {
+}
+
+@keyframes reversePlay {
     from {
-      left: calc(var(--width) * -1);
+        left: calc(var(--width) * -1);
     }
+
     to {
-      left: 100%;
+        left: 100%;
     }
-  }
-  
+}
+
+/*Prices*/
+.prices-wrapper {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.price-cards-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0px;
+}
+
+.price-card{
+    width: 27%;
+    border: 1px solid white;
+    padding: 20px;
+    text-align: left;
+}
+
+.price{
+    color: #ffcc00;
+    font-size: 50px;
+}
+
+.price-card button{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.price-card ul, .price-card p{
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.prices-wrapper button.info{
+    background-color: #262B2A;
+    border: 1px solid #F61A30;
+    color: #F61A30;
+    transition: color 0.2s, background-color 0.2s;
+}
+
+.prices-wrapper button.info:hover{
+    color: #262B2A;
+    background-color: #F61A30;
+}
