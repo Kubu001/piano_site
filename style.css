@@ -52,6 +52,19 @@ nav {
 
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:visited{
+    color: gray;
+}
+
+hr{
+    margin-top: 75px;
+}
+
 div.logo {
     width: 50px;
     height: 50px;
@@ -295,11 +308,55 @@ div.logo {
 
 .foot-wrapper{
     display: flex;
+    margin-top: 150px;
 }
 
 .contacts, .menu{
     display: flex;
     flex-direction: column;
     width: 50%;
+}
 
+.contacts p{
+    margin: 0px;
+}
+
+.contacts h6{
+    margin-top: 30px;
+    letter-spacing: normal;
+    font-size: 13px;
+}
+
+.socials{
+    margin-top: 20px;
+}
+
+.socials a img{
+    margin-right: 15px;
+    height: 20px;
+}
+
+.menu{
+    align-items: end;
+}
+
+.menu a{
+    margin-top: 15px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.formalities{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.formalities .docs a{
+    margin-left: 15px;
+}
+
+.formalities .docs a:hover{
+    text-decoration: underline;
 }
