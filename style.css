@@ -360,3 +360,63 @@ div.logo {
 .formalities .docs a:hover{
     text-decoration: underline;
 }
+
+/*PIANINO*/
+.content-wrapper{
+    display: flex;
+    margin-top: 100px;
+}
+
+.text{
+    margin-top: 250px;
+    width: 90%;
+}
+
+.piano-wrapper{
+    position: absolute;
+    right: 0px;
+    top: 125px;
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.key{
+    height: var(--height);
+    width: calc(var(--height) * 4);
+    position: relative;
+    transition: all 0.5s;
+}
+
+.white{
+    --height: 100px;
+    background-color: white;
+    border: 1px solid #262B2A;
+}
+
+.white:hover{
+    background-color: #CCC;
+}
+
+.white.active{
+    left: 20px;
+}
+
+.black{
+    --height: 50px;
+    background-color: black;
+    margin-top: calc(var(--height) / -2);
+    margin-bottom: calc(var(--height) / -2);
+    z-index: 2;
+}
+
+.black:hover{
+    background-color: #333;
+}
+
+
+.black.active{
+    left: 20px;
+}
