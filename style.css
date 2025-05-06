@@ -420,3 +420,104 @@ div.logo {
 .black.active{
     left: 20px;
 }
+
+/*I'm your best bet segment*/
+
+.pick-me{
+    background-color: #48514f;
+    padding: 80px 40px;
+    text-align: center;
+    margin-top: 400px;;
+}
+
+.argument-wrapper{
+    display: flex;
+    margin-top :100px;
+    justify-content: space-around;
+}
+
+.argument{
+    width: 27%;
+}
+
+.argument > p{
+    font-weight: 300;
+}
+
+.argument > h6{
+    font-size: 15px;
+}
+
+.icon{
+    width: 40px;
+    margin-bottom: 20px;
+}
+
+/*FAQ*/
+.faq-wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 150px;
+}
+
+.faq-text{
+    width: 40%;
+}
+
+/* Style for the main FAQ container */
+.faq-container {
+    width:50%;
+  }
+  
+  /* Style for each FAQ item */
+  .faq-item {
+    border-top: 1px solid #48514f; /* Light gray border between items */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  /* Style for the question buttons */
+  .faq-question {
+    background-color: rgba(0,0,0,0);
+    color: #CCC;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.3s ease; /* Smooth background transition on hover */
+  }
+
+  .faq-question:hover{
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Style for the arrow icon */
+  .faq-question .arrow {
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease; /* Smooth rotation transition */
+  }
+  
+  /* Rotate the arrow when the question is active (expanded) */
+  .faq-question.active .arrow {
+    transform: rotate(180deg); /* Rotate arrow 180 degrees */
+  }
+  
+  /* Style for the answer sections */
+  .faq-answer {
+    max-height: 0; /* Initially hide the answer */
+    overflow: hidden;
+    transition: max-height 0.3s ease; /* Smooth transition for expanding */
+  }
+  
+  /* Style for the answer text */
+  .faq-answer p {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5; /* Increase line height for better readability */
+    color: #606c69; /* Slightly lighter text color for answers */
+  }
