@@ -18,10 +18,10 @@ button {
     padding: 15px;
     font-weight: 700;
     letter-spacing: 1px;
-    transition: background-color 0.5s 
+    transition: background-color 0.5s
 }
 
-button:hover{
+button:hover {
     background-color: #dc091e;
     cursor: pointer;
 }
@@ -41,7 +41,7 @@ ul {
     list-style-type: "\2705";
 }
 
-li{
+li {
     padding: 5px 0px 0px 20px;
 }
 
@@ -52,16 +52,16 @@ nav {
 
 }
 
-a{
+a {
     color: white;
     text-decoration: none;
 }
 
-a:visited{
+a:visited {
     color: gray;
 }
 
-hr{
+hr {
     margin-top: 75px;
 }
 
@@ -241,42 +241,43 @@ div.logo {
     margin-top: 200px;
 }
 
-.price-cards-wrapper{
+.price-cards-wrapper {
     display: flex;
     justify-content: space-between;
     margin: 50px 0px;
 }
 
-.price-card{
+.price-card {
     width: 27%;
     border: 1px solid white;
     padding: 20px;
     text-align: left;
 }
 
-.price{
+.price {
     color: #ffcc00;
     font-size: 50px;
 }
 
-.price-card button{
+.price-card button {
     width: 100%;
     margin-bottom: 30px;
 }
 
-.price-card ul, .price-card p{
+.price-card ul,
+.price-card p {
     font-weight: 300;
     font-size: 13px;
 }
 
-.prices-wrapper button.info{
+.prices-wrapper button.info {
     background-color: #262B2A;
     border: 1px solid #F61A30;
     color: #F61A30;
     transition: color 0.2s, background-color 0.2s;
 }
 
-.prices-wrapper button.info:hover{
+.prices-wrapper button.info:hover {
     color: #262B2A;
     background-color: #F61A30;
 }
@@ -284,7 +285,7 @@ div.logo {
 
 /*Contact*/
 
-.contact{
+.contact {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -299,80 +300,81 @@ div.logo {
     font-size: 13px;
 }
 
-.contact-btn{
+.contact-btn {
     margin-top: 30px;
     font-size: 17px;
 }
 
 /*footer*/
 
-.foot-wrapper{
+.foot-wrapper {
     display: flex;
     margin-top: 150px;
 }
 
-.contacts, .menu{
+.contacts,
+.menu {
     display: flex;
     flex-direction: column;
     width: 50%;
 }
 
-.contacts p{
+.contacts p {
     margin: 0px;
 }
 
-.contacts h6{
+.contacts h6 {
     margin-top: 30px;
     letter-spacing: normal;
     font-size: 13px;
 }
 
-.socials{
+.socials {
     margin-top: 20px;
 }
 
-.socials a img{
+.socials a img {
     margin-right: 15px;
     height: 20px;
 }
 
-.menu{
+.menu {
     align-items: end;
 }
 
-.menu a{
+.menu a {
     margin-top: 15px;
     font-size: 13px;
     font-weight: bold;
 }
 
-.formalities{
+.formalities {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 13px;
 }
 
-.formalities .docs a{
+.formalities .docs a {
     margin-left: 15px;
 }
 
-.formalities .docs a:hover{
+.formalities .docs a:hover {
     text-decoration: underline;
 }
 
 /*PIANINO*/
-.content-wrapper{
+.content-wrapper {
     display: flex;
     margin-top: 100px;
 }
 
-.text{
+.piano>.text {
     margin-top: 250px;
     width: 90%;
 }
 
-.piano-wrapper{
+.piano-wrapper {
     position: absolute;
     right: 0px;
     top: 125px;
@@ -383,28 +385,28 @@ div.logo {
     align-items: end;
 }
 
-.key{
+.key {
     height: var(--height);
     width: calc(var(--height) * 4);
     position: relative;
     transition: all 0.5s;
 }
 
-.white{
+.white {
     --height: 100px;
     background-color: white;
     border: 1px solid #262B2A;
 }
 
-.white:hover{
+.white:hover {
     background-color: #CCC;
 }
 
-.white.active{
+.white.active {
     left: 20px;
 }
 
-.black{
+.black {
     --height: 50px;
     background-color: black;
     margin-top: calc(var(--height) / -2);
@@ -412,72 +414,70 @@ div.logo {
     z-index: 2;
 }
 
-.black:hover{
+.black:hover {
     background-color: #333;
 }
 
 
-.black.active{
+.black.active {
     left: 20px;
 }
 
 /*I'm your best bet segment*/
 
-.pick-me{
+.pick-me {
     background-color: #48514f;
     padding: 80px 40px;
     text-align: center;
-    margin-top: 400px;;
+    margin-top: 400px;
+    ;
 }
 
-.argument-wrapper{
+.argument-wrapper {
     display: flex;
-    margin-top :100px;
+    margin-top: 100px;
     justify-content: space-around;
 }
 
-.argument{
+.argument {
     width: 27%;
 }
 
-.argument > p{
+.argument>p {
     font-weight: 300;
 }
 
-.argument > h6{
+.argument>h6 {
     font-size: 15px;
 }
 
-.icon{
+.icon {
     width: 40px;
     margin-bottom: 20px;
 }
 
 /*FAQ*/
-.faq-wrapper{
+.faq-wrapper {
     display: flex;
     justify-content: space-between;
     margin-top: 150px;
 }
 
-.faq-text{
+.faq-text {
     width: 40%;
 }
 
-/* Style for the main FAQ container */
 .faq-container {
-    width:50%;
-  }
-  
-  /* Style for each FAQ item */
-  .faq-item {
-    border-top: 1px solid #48514f; /* Light gray border between items */
-    overflow: hidden; /* Hide overflowing content */
-  }
-  
-  /* Style for the question buttons */
-  .faq-question {
-    background-color: rgba(0,0,0,0);
+    width: 50%;
+}
+
+.faq-item {
+    border-top: 1px solid #48514f;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: rgba(0, 0, 0, 0);
     color: #CCC;
     width: 100%;
     padding: 20px;
@@ -487,37 +487,56 @@ div.logo {
     outline: none;
     cursor: pointer;
     position: relative;
-    transition: background-color 0.3s ease; /* Smooth background transition on hover */
-  }
+    transition: background-color 0.3s ease;
+}
 
-  .faq-question:hover{
+.faq-question:hover {
     background-color: rgba(255, 255, 255, 0.2);
-  }
-  
-  /* Style for the arrow icon */
-  .faq-question .arrow {
+}
+
+.faq-question .arrow {
     position: absolute;
     right: 20px;
-    transition: transform 0.3s ease; /* Smooth rotation transition */
-  }
-  
-  /* Rotate the arrow when the question is active (expanded) */
-  .faq-question.active .arrow {
-    transform: rotate(180deg); /* Rotate arrow 180 degrees */
-  }
-  
-  /* Style for the answer sections */
-  .faq-answer {
-    max-height: 0; /* Initially hide the answer */
+    transition: transform 0.3s ease;
+}
+
+.faq-question.active .arrow {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease; /* Smooth transition for expanding */
-  }
-  
-  /* Style for the answer text */
-  .faq-answer p {
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer p {
     padding: 20px;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.5; /* Increase line height for better readability */
-    color: #606c69; /* Slightly lighter text color for answers */
-  }
+    line-height: 1.5;
+    color: #606c69;
+}
+
+/*ABOUT*/
+
+.about{
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.text{
+    width: 40%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.image{
+    width: 50%;
+    background-image: url("https://scontent.fpoz3-1.fna.fbcdn.net/v/t39.30808-6/488904229_1048203783787566_3574529439433435850_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=QqKPqbzm6JQQ7kNvwGYODxt&_nc_oc=AdlTmJOJl5IpPJyVaqT1fTuuBnUTC_QoKFAny3Ybi53R1IQV3fEJfIQo7PE8nmU5SWU&_nc_zt=23&_nc_ht=scontent.fpoz3-1.fna&_nc_gid=Va8_OKFvOpCmpLj3H_9zCA&oh=00_AfL2soCljKW37hTayISlzytxKc9zcNEd4zNfp41oR4VQlQ&oe=6820008B");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
