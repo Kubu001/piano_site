@@ -117,7 +117,7 @@
                     <p>Solidne podstawy dla początkujących, którzy chcą nauczyć się podstawowych umiejętności</p>
                     <hr>
                     <p><span class="price">50 PLN</span><br>/ 30 minut</p>
-                    <button>ZACZNIJ</button>
+                    <a href="contact.html"><button>ZACZNIJ</button></a>
                     <hr>
                     <ul>
                         <li>Zbuduj solidne podstawy techniczne</li>
@@ -131,7 +131,7 @@
                     <p>Przenieś swoje umiejętności gry na pianinie na wyższy poziom i udoskonal swój kunszt muzyczny</p>
                     <hr>
                     <p><span class="price">70 PLN</span><br>/ 45 minut</p>
-                    <button>ZACZNIJ</button>
+                    <a href="contact.html"><button>ZACZNIJ</button></a>
                     <hr>
                     <ul>
                         <li>Rozwijaj głębsze zrozumienie muzyki</li>
@@ -145,7 +145,7 @@
                     <p>Uwolnij swój muzyczny geniusz i zanurz się głębiej w zawiłościach muzyki</p>
                     <hr>
                     <p><span class="price">85 PLN</span><br>/ 60 minut</p>
-                    <button>ZACZNIJ</button>
+                    <a href="contact.html"><button>ZACZNIJ</button></a>
                     <hr>
                     <ul>
                         <li>Odkryj zawiłości zaawansowanego repertuaru</li>
@@ -159,13 +159,13 @@
         <div class="contact">
             <h1>Gotowy rozpocząć swoją muzyczną przygodę?</h1>
             <p>Skontaktuj się ze mną by się umówić na twoją pierwszą lekcję ze mną.<br> Zróbmy pierwszy krok razem!</p>
-            <button class="contact-btn">Kontakt</button>
+            <a href="contact.html"><button class="contact-btn">Kontakt</button></a>
         </div>
         <div class="faq-wrapper">
             <div class="faq-text">
                 <h1>FAQs</h1>
                 <p>Masz pytanie? Zapoznaj się z pomocną sekcją FAQ, aby uzyskać odpowiedzi i informacje na temat moich lekcji gry na pianinie.</p>
-                <button>Kontakt</button>
+                <a href="contact.html"><button>Kontakt</button></a>
             </div>
             <div class="faq-container">
                 <div class="faq-item">
@@ -243,7 +243,7 @@
             <div class="foot-wrapper">
                 <div class="contacts">
                     <div class="logo">
-                        <a><img src=""></a>
+                        <a href="contact.html"><img src=""></a>
                     </div>
                     <h6>CONTACT:</h6>
                     <p><a href="mailto:zsttpokupniak@gmail.com">zsttpokupniak@gmail.com</a></p>
@@ -257,10 +257,10 @@
                     </div>
                 </div>
                 <div class="menu">
-                    <a href="">Homepage</a>
-                    <a href="">About</a>
-                    <a href="">Private Lessons</a>
-                    <a href="">Contact</a>
+                    <a href="index.html">Homepage</a>
+                    <a href="about.html">About</a>
+                    <a href="pricing.html">Private Lessons</a>
+                    <a href="contact.html">Contact</a>
                 </div>
             </div>
             <hr>
@@ -274,75 +274,7 @@
         </footer>
     </div>
 
-    <script>
-        var WHITE_KEYS = ['z', 'x', 'c', 'v', 'b', 'n', 'm'];
-        var BLACK_KEYS = ['s', 'd', 'g', 'h', 'j'];
-
-        var keys = document.querySelectorAll('.key');
-        var whiteKeys = document.querySelectorAll('.white.key')
-        var blackKeys = document.querySelectorAll('.black.key')
-
-        keys.forEach(key => {
-            key.addEventListener('click', () => playNote(key));
-        })
-
-        document.addEventListener('keydown', e => {
-            if (e.repeat) return;
-
-            var key = e.key;
-            var whiteKeyIndex = WHITE_KEYS.indexOf(key);
-            var blackKeyIndex = BLACK_KEYS.indexOf(key);
-
-            if (whiteKeyIndex > -1) playNote(whiteKeys[whiteKeyIndex]);
-            if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex]);
-        })
-
-        function sleep(ms) {
-            return new Promise(resolve => setTimeout(resolve, ms));
-        }
-
-
-        function playNote(key) {
-            var noteAudio = document.getElementById(key.dataset.note);
-            noteAudio.currentTime = 0
-            noteAudio.play();
-            key.classList.add('active');
-
-            sleep(500).then(() => { key.classList.remove('active'); });
-        }
-
-        // Select all question buttons
-        const faqQuestions = document.querySelectorAll('.faq-question');
-
-        // Loop through each question button
-        faqQuestions.forEach(question => {
-            // Add a click event listener to each question
-            question.addEventListener('click', () => {
-                // Close any other open answers except the one clicked
-                faqQuestions.forEach(item => {
-                    if (item !== question) {
-                        item.classList.remove('active'); // Remove 'active' class to reset arrow rotation
-                        item.nextElementSibling.style.maxHeight = null; // Collapse the answer
-                    }
-                });
-
-                // Toggle 'active' class on the clicked question to rotate the arrow
-                question.classList.toggle('active');
-
-                // Select the corresponding answer div
-                const answer = question.nextElementSibling;
-
-                // Check if the answer is already open
-                if (answer.style.maxHeight) {
-                    // If open, close it by resetting max-height
-                    answer.style.maxHeight = null;
-                } else {
-                    // If closed, set max-height to scrollHeight to expand it
-                    answer.style.maxHeight = answer.scrollHeight + 'px';
-                }
-            });
-        });
-    </script>
+    <script src="javascript.js"></script>
 </body>
 
 </html>
